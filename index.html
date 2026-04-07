@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Shailendra Kushwaha — Full Stack Developer</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">SK.</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#dsa">DSA</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:shailendrakushwaha732@gmail.com" class="nav-cta">Hire Me</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span></span> Open to opportunities</div>
+    <h1>Hi, I'm <span class="highlight">Shailendra<br>Kushwaha</span></h1>
+    <p class="hero-sub">Full Stack Developer · Java Spring Boot</p>
+    <p class="hero-desc">Building scalable backend systems and elegant frontends. Passionate about clean code, DSA, and turning ideas into production-ready applications.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-secondary">Get In Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">700+</div><div class="stat-label">GFG Problems Solved</div></div>
+      <div class="stat"><div class="stat-num">6+</div><div class="stat-label">GitHub Repositories</div></div>
+      <div class="stat"><div class="stat-num">2+</div><div class="stat-label">Years Experience</div></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="code-card">
+      <div class="code-header"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><span class="code-title">Developer.java</span></div>
+      <div class="code-body">
+        <div class="line"><span class="kw">@RestController</span></div>
+        <div class="line"><span class="kw">public class</span> <span class="cls">Developer</span> {</div>
+        <div class="line">&nbsp;</div>
+        <div class="line">&nbsp;&nbsp;<span class="kw">private</span> <span class="cls">String</span> name = <span class="str">"Shailendra"</span>;</div>
+        <div class="line">&nbsp;&nbsp;<span class="kw">private</span> <span class="cls">String</span> role = <span class="str">"Full Stack"</span>;</div>
+        <div class="line">&nbsp;&nbsp;<span class="kw">private int</span> gfgSolved = <span class="num">700</span>;</div>
+        <div class="line">&nbsp;</div>
+        <div class="line">&nbsp;&nbsp;<span class="kw">@GetMapping</span>(<span class="str">"/skills"</span>)</div>
+        <div class="line">&nbsp;&nbsp;<span class="kw">public</span> <span class="cls">List</span>&lt;<span class="cls">String</span>&gt; <span class="fn">getSkills</span>() {</div>
+        <div class="line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> <span class="cls">List</span>.of(</div>
+        <div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"Spring Boot"</span>, <span class="str">"React"</span>,</div>
+        <div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"MySQL"</span>, <span class="str">"Docker"</span></div>
+        <div class="line">&nbsp;&nbsp;&nbsp;&nbsp;);</div>
+        <div class="line">&nbsp;&nbsp;}</div>
+        <div class="line">}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="fade-up">
+    <span class="section-label">Who I Am</span>
+    <h2 class="section-title">About Me</h2>
+  </div>
+  <div class="about-grid">
+    <div class="fade-up">
+      <div class="about-avatar">💻</div>
+    </div>
+    <div class="fade-up about-text">
+      <p>I'm a Full Stack Developer from Lucknow, India, passionate about building robust and scalable applications using Java and the Spring Boot ecosystem. I studied at Ambalika Institute of Management and Technology (AIMT), Lucknow.</p>
+      <p>I love solving Data Structures & Algorithms problems — with 700+ problems solved on GeeksforGeeks, I enjoy the challenge of writing efficient, optimized code. I'm always eager to explore new technologies and turn ideas into real-world solutions.</p>
+      <p>Whether it's designing REST APIs, building React frontends, or optimizing database queries — I bring energy and precision to every project.</p>
+      <div class="info-grid">
+        <div class="info-item"><div class="info-label">College</div><div class="info-value">AIMT Lucknow</div></div>
+        <div class="info-item"><div class="info-label">Location</div><div class="info-value">Lucknow, India</div></div>
+        <div class="info-item"><div class="info-label">Email</div><div class="info-value" style="font-size:12px;">shailendrakushwaha732@gmail.com</div></div>
+        <div class="info-item"><div class="info-label">Phone</div><div class="info-value">+91 9140367060</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="fade-up">
+    <span class="section-label">What I Know</span>
+    <h2 class="section-title">Tech Stack</h2>
+    <p class="section-sub">Technologies and tools I use to build production-ready applications from backend to frontend.</p>
+  </div>
+  <div class="skills-grid fade-up">
+    <div class="skill-card">
+      <div class="skill-icon purple">☕</div>
+      <h3>Backend Development</h3>
+      <p style="font-size:14px;color:var(--muted);margin-bottom:0;">Building scalable REST APIs and microservices with Java Spring Boot ecosystem.</p>
+      <div class="tags">
+        <span class="tag">Java</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">Spring MVC</span>
+        <span class="tag">Spring Security</span>
+        <span class="tag">Hibernate</span>
+        <span class="tag">JPA</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon teal">🎨</div>
+      <h3>Frontend Development</h3>
+      <p style="font-size:14px;color:var(--muted);margin-bottom:0;">Crafting responsive, interactive UIs with modern JavaScript frameworks.</p>
+      <div class="tags">
+        <span class="tag teal">React.js</span>
+        <span class="tag teal">HTML5</span>
+        <span class="tag teal">CSS3</span>
+        <span class="tag teal">JavaScript</span>
+        <span class="tag teal">Bootstrap</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon orange">🗄️</div>
+      <h3>Database & Storage</h3>
+      <p style="font-size:14px;color:var(--muted);margin-bottom:0;">Designing and optimizing relational and NoSQL data stores.</p>
+      <div class="tags">
+        <span class="tag orange">MySQL</span>
+        <span class="tag orange">PostgreSQL</span>
+        <span class="tag orange">MongoDB</span>
+        <span class="tag orange">Redis</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon blue">🛠️</div>
+      <h3>Tools & DevOps</h3>
+      <p style="font-size:14px;color:var(--muted);margin-bottom:0;">Version control, containerization, and deployment workflows.</p>
+      <div class="tags">
+        <span class="tag blue">Git</span>
+        <span class="tag blue">GitHub</span>
+        <span class="tag blue">Docker</span>
+        <span class="tag blue">Maven</span>
+        <span class="tag blue">Postman</span>
+        <span class="tag blue">Linux</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="fade-up">
+    <span class="section-label">What I've Built</span>
+    <h2 class="section-title">Projects</h2>
+    <p class="section-sub">A selection of real-world projects from my GitHub, built with Java, Spring Boot, and modern web technologies.</p>
+  </div>
+  <div class="projects-grid fade-up">
+    <div class="proj-card">
+      <div class="proj-banner b1">🧾</div>
+      <div class="proj-body">
+        <h3>Billing Master</h3>
+        <p>A comprehensive billing and invoice management system. Handles customer billing, invoice generation, and payment tracking with a clean web interface.</p>
+        <div class="proj-tags">
+          <span class="ptag">Java</span><span class="ptag">Spring Boot</span><span class="ptag">MySQL</span><span class="ptag">HTML</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/Shailendra-debug/Billing-Master" class="proj-link" target="_blank">⬡ GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-banner b2">📞</div>
+      <div class="proj-body">
+        <h3>GetInTouch</h3>
+        <p>A contact management application built with Java. Allows users to store, manage, and retrieve contact information with a REST API backend.</p>
+        <div class="proj-tags">
+          <span class="ptag">Java</span><span class="ptag">Spring Boot</span><span class="ptag">REST API</span><span class="ptag">JPA</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/Shailendra-debug/GetInTouch" class="proj-link" target="_blank">⬡ GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-banner b3">🎓</div>
+      <div class="proj-body">
+        <h3>SEEP — Smart Exam Portal</h3>
+        <p>Smart Exam Environment Portal — a modern platform for students and administrators. Supports DSA practice, MCQ exams, result tracking, and coding skill improvement.</p>
+        <div class="proj-tags">
+          <span class="ptag">TypeScript</span><span class="ptag">React</span><span class="ptag">Spring Boot</span><span class="ptag">MySQL</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/Shailendra-debug/SEEP" class="proj-link" target="_blank">⬡ GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-banner b4">🖼️</div>
+      <div class="proj-body">
+        <h3>Pixa Universe</h3>
+        <p>A visually rich web project with creative CSS-heavy design. Showcases frontend development skills with animations, layouts, and modern UI patterns.</p>
+        <div class="proj-tags">
+          <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/Shailendra-debug/Pixa-Universe" class="proj-link" target="_blank">⬡ GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DSA SECTION -->
+<section id="dsa" class="dsa-section">
+  <div class="fade-up">
+    <span class="section-label">Problem Solving</span>
+    <h2 class="section-title">DSA Journey</h2>
+    <p class="section-sub">Consistently solving problems on GeeksforGeeks to sharpen algorithmic thinking and data structures mastery.</p>
+  </div>
+  <div class="dsa-grid fade-up">
+    <div>
+      <div class="dsa-stats">
+        <div class="dsa-stat"><div class="dsa-stat-num">700+</div><div class="dsa-stat-label">Problems Solved</div></div>
+        <div class="dsa-stat"><div class="dsa-stat-num">GFG</div><div class="dsa-stat-label">Platform</div></div>
+        <div class="dsa-stat"><div class="dsa-stat-num">Java</div><div class="dsa-stat-label">Primary Language</div></div>
+        <div class="dsa-stat"><div class="dsa-stat-num">Daily</div><div class="dsa-stat-label">Practice Streak</div></div>
+      </div>
+      <div style="margin-top:24px;">
+        <a href="https://www.geeksforgeeks.org/profile/shailendrakl2dw?tab=activity" target="_blank" class="btn-primary" style="display:inline-block;text-decoration:none;">View GFG Profile →</a>
+      </div>
+    </div>
+    <div>
+      <div class="progress-list">
+        <div class="progress-item">
+          <div class="progress-top"><span>Arrays & Strings</span><span>Proficient</span></div>
+          <div class="progress-bar"><div class="progress-fill" style="width:90%"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-top"><span>Trees & Graphs</span><span>Strong</span></div>
+          <div class="progress-bar"><div class="progress-fill" style="width:82%"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-top"><span>Dynamic Programming</span><span>Good</span></div>
+          <div class="progress-bar"><div class="progress-fill" style="width:75%"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-top"><span>Linked Lists & Stacks</span><span>Proficient</span></div>
+          <div class="progress-bar"><div class="progress-fill" style="width:88%"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-top"><span>Searching & Sorting</span><span>Expert</span></div>
+          <div class="progress-bar"><div class="progress-fill" style="width:93%"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-top"><span>Recursion & Backtracking</span><span>Good</span></div>
+          <div class="progress-bar"><div class="progress-fill" style="width:78%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="fade-up">
+    <span class="section-label">My Journey</span>
+    <h2 class="section-title">Experience & Education</h2>
+    <p class="section-sub">My academic and professional timeline building towards becoming a full stack engineer.</p>
+  </div>
+  <div class="timeline fade-up">
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <div class="tl-header"><h3>Full Stack Developer</h3><span class="tl-date">2023 — Present</span></div>
+        <div class="tl-company">Freelance / Open Source Projects</div>
+        <p class="tl-desc">Building full stack web applications using Java Spring Boot for backend REST APIs, React.js for frontend, and MySQL/PostgreSQL for data persistence. Contributed to SEEP — a Smart Exam Portal used by students for DSA practice and exam management.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--accent2);box-shadow:0 0 0 2px var(--accent2);"></div>
+      <div class="tl-card">
+        <div class="tl-header"><h3>Backend Developer Intern</h3><span class="tl-date">2022 — 2023</span></div>
+        <div class="tl-company">Project-based Learning</div>
+        <p class="tl-desc">Developed Billing Master — a billing management application using Java Spring Boot and MySQL. Implemented CRUD operations, RESTful APIs, and a simple web UI using HTML/CSS. Gained hands-on experience with Spring Data JPA and Hibernate ORM.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--accent3);box-shadow:0 0 0 2px var(--accent3);"></div>
+      <div class="tl-card">
+        <div class="tl-header"><h3>B.Tech — Computer Science</h3><span class="tl-date">2019 — 2023</span></div>
+        <div class="tl-company">Ambalika Institute of Management and Technology (AIMT), Lucknow</div>
+        <p class="tl-desc">Studied core computer science subjects including Data Structures, Algorithms, Database Management, Operating Systems, and Object-Oriented Programming with Java. Actively participated in coding contests and developed mini-projects.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="fade-up">
+    <span class="section-label">Let's Connect</span>
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-sub">Whether it's a job opportunity, a project collaboration, or just a chat about Java — my inbox is always open!</p>
+  </div>
+  <div class="contact-grid fade-up">
+    <div>
+      <div class="contact-links">
+        <a href="https://github.com/Shailendra-debug" target="_blank" class="contact-link">
+          <div class="contact-icon gh">⬡</div>
+          <div class="contact-info"><h4>GitHub</h4><p>github.com/Shailendra-debug</p></div>
+        </a>
+        <a href="https://www.linkedin.com/in/shailendra-kushwaha-3b2272205/" target="_blank" class="contact-link">
+          <div class="contact-icon li">in</div>
+          <div class="contact-info"><h4>LinkedIn</h4><p>shailendra-kushwaha-3b2272205</p></div>
+        </a>
+        <a href="https://www.geeksforgeeks.org/profile/shailendrakl2dw?tab=activity" target="_blank" class="contact-link">
+          <div class="contact-icon gfg" style="font-size:14px;font-weight:800;color:#00cc88;">GFG</div>
+          <div class="contact-info"><h4>GeeksforGeeks</h4><p>700+ problems solved</p></div>
+        </a>
+        <a href="mailto:shailendrakushwaha732@gmail.com" class="contact-link">
+          <div class="contact-icon em">✉</div>
+          <div class="contact-info"><h4>Email</h4><p>shailendrakushwaha732@gmail.com</p></div>
+        </a>
+        <a href="tel:+919140367060" class="contact-link">
+          <div class="contact-icon ph">📞</div>
+          <div class="contact-info"><h4>Phone</h4><p>+91 9140367060</p></div>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="form-card">
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:24px;">Send a Message</h3>
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="John Doe"/>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="john@example.com"/>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" placeholder="Job Opportunity / Collaboration..."/>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Hi Shailendra, I'd love to connect about..."></textarea>
+        </div>
+        <button class="submit-btn" onclick="alert('Thanks for your message! Shailendra will get back to you soon. 🚀')">Send Message ↗</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">SK.</div>
+  <p class="footer-copy">© 2026 Shailendra Kushwaha · Built with ❤️ and Java</p>
+  <div class="footer-links">
+    <a href="https://github.com/Shailendra-debug" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/shailendra-kushwaha-3b2272205/" target="_blank">LinkedIn</a>
+    <a href="https://www.geeksforgeeks.org/profile/shailendrakl2dw?tab=activity" target="_blank">GFG</a>
+  </div>
+</footer>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
